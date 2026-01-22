@@ -121,14 +121,18 @@
 <section>
     <h2>Galeria realizacji</h2>
     <div class="gallery">
-        <a href="images/realizacja1.jpg" target="_blank">
-            <img src="images/realizacja1.jpg" alt="Realizacja 1">
+        <a href="images/logo1.jpg" target="_blank">
+            <img src="images/logo1.jpg" alt="Logo KAM-BUD 1">
         </a>
-        <a href="images/realizacja2.jpg" target="_blank">
-            <img src="images/realizacja2.jpg" alt="Realizacja 2">
+        <a href="images/logo2.png" target="_blank">
+            <img src="images/logo2.png" alt="Logo KAM-BUD 2">
+        </a>
+        <a href="images/realizacja1.png" target="_blank">
+            <img src="images/realizacja1.png" alt="Realizacja KAM-BUD 1">
         </a>
     </div>
 </section>
+
 
 <section>
     <h2>Kontakt</h2>
@@ -155,3 +159,4 @@
 
 </body>
 </html>
+
