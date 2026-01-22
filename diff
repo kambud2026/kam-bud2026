@@ -1,55 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>KAM-BUD – Twoja Przestrzeń, Nasza Pasja</title>
+    <title>KAM-BUD – Remonty i Wykończenia Wnętrz | Lublin</title>
+
+    <!-- SEO -->
+    <meta name="description" content="KAM-BUD – profesjonalne remonty mieszkań i wykończenia wnętrz pod klucz w Lublinie. Solidnie, terminowo i bez stresu.">
+    <meta name="keywords" content="remonty Lublin, wykończenia wnętrz Lublin, firma remontowa Lublin, KAM-BUD">
+    <meta name="author" content="KAM-BUD">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         :root {
             --primary-color: #ff7f00;
             --bg-color: #f4f4f4;
             --text-color: #333;
             --header-bg: #1f2937;
-            --header-text: #fff;
         }
 
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: var(--bg-color);
+            font-family: Arial, sans-serif;
+            background: var(--bg-color);
             color: var(--text-color);
-            scroll-behavior: smooth;
         }
 
         header {
-            background-color: var(--header-bg);
-            color: var(--header-text);
-            padding: 40px 20px;
+            background: var(--header-bg);
+            color: white;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 50px 20px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2rem;
             color: var(--primary-color);
-        }
-
-        header p {
-            margin: 5px 0 0;
-            font-size: 1rem;
-        }
-
-        nav {
-            margin-top: 15px;
+            margin-bottom: 10px;
         }
 
         nav a {
-            color: var(--header-text);
-            margin: 0 15px;
+            color: white;
+            margin: 0 10px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -59,20 +50,11 @@
         }
 
         section {
-            padding: 40px 20px;
             max-width: 1000px;
-            margin: 20px auto;
+            margin: 30px auto;
+            padding: 40px 20px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         h2 {
@@ -82,8 +64,8 @@
         }
 
         ul {
-            padding-left: 0;
             list-style: none;
+            padding: 0;
         }
 
         ul li {
@@ -93,50 +75,11 @@
         }
 
         ul li::before {
-            content: '🔨';
+            content: "🔨";
             position: absolute;
             left: 0;
         }
 
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background: #e67300;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        footer {
-            background: var(--header-bg);
-            color: var(--header-text);
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        /* GALERIA */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -148,146 +91,104 @@
             height: 200px;
             object-fit: cover;
             border-radius: 6px;
-            transition: transform 0.3s, border 0.3s;
-            cursor: pointer;
-            border: 2px solid transparent;
         }
 
-        .gallery img:hover {
-            transform: scale(1.05);
-            border: 2px solid var(--primary-color);
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
         }
 
-        /* GOOGLE MAP */
+        footer {
+            background: var(--header-bg);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
         .map-container {
-            width: 100%;
             height: 400px;
-            margin-top: 20px;
-        }
-
-        /* RESPONSYWNE */
-        @media (max-width: 768px) {
-            nav a {
-                display: block;
-                margin: 5px 0;
-            }
-            .gallery img {
-                height: 180px;
-            }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>KAM-BUD</h1>
-    <p>Twoja Przestrzeń, Nasza Pasja</p>
+    <h1>Remonty i Wykończenia Wnętrz – Lublin</h1>
+    <p><strong>KAM-BUD – Twoja Przestrzeń, Nasza Pasja</strong></p>
+    <p>Remont bez stresu? Z nami to standard.</p>
+
     <nav>
         <a href="#about">O firmie</a>
-        <a href="#services">Zakres usług</a>
-        <a href="#why">Dlaczego KAM-BUD?</a>
+        <a href="#services">Usługi</a>
         <a href="#gallery">Galeria</a>
         <a href="#contact">Kontakt</a>
-        <a href="#map">Lokalizacja</a>
     </nav>
 </header>
 
 <section id="about">
-    <h2>O firmie</h2>
+    <h2>Firma remontowa KAM-BUD – Lublin</h2>
     <p>
-        KAM-BUD to firma remontowo-budowlana oferująca kompleksowe
-        usługi wykończeniowe i remontowe. Stawiamy na solidność,
-        terminowość i wysoką jakość wykonania.
+        KAM-BUD to firma remontowo-budowlana z Lublina, specjalizująca się
+        w kompleksowych remontach mieszkań, domów oraz wykończeniach wnętrz pod klucz.
+        Pracujemy solidnie, terminowo i z dbałością o detale.
     </p>
 </section>
 
 <section id="services">
-    <h2>Zakres usług</h2>
+    <h2>Zakres usług remontowych</h2>
     <ul>
         <li>Remonty mieszkań i domów</li>
         <li>Wykończenia wnętrz pod klucz</li>
-        <li>Gładzie, malowanie, tynki</li>
+        <li>Malowanie, gładzie, tynki</li>
         <li>Układanie paneli i płytek</li>
-        <li>Zabudowy g-k</li>
-    </ul>
-</section>
-
-<section id="why">
-    <h2>Dlaczego KAM-BUD?</h2>
-    <ul>
-        <li>Indywidualne podejście do klienta</li>
-        <li>Rzetelne wykonanie</li>
-        <li>Terminowość</li>
-        <li>Atrakcyjne ceny</li>
+        <li>Zabudowy karton-gips</li>
     </ul>
 </section>
 
 <section id="gallery">
     <h2>Galeria realizacji</h2>
+    <p style="text-align:center;">
+        Każda realizacja to nasza wizytówka – stawiamy na jakość i estetykę.
+    </p>
+
     <div class="gallery">
-        <a href="images/logo1.jpg" target="_blank">
-            <img src="images/logo1.jpg" alt="Logo KAM-BUD 1">
-        </a>
-        <a href="images/logo2.png" target="_blank">
-            <img src="images/logo2.png" alt="Logo KAM-BUD 2">
-        </a>
-        <a href="images/realizacja1.png" target="_blank">
-            <img src="images/realizacja1.png" alt="Realizacja KAM-BUD 1">
-        </a>
+        <img src="images/logo1.jpg" alt="Logo KAM-BUD">
+        <img src="images/logo2.png" alt="Logo KAM-BUD wariant">
+        <img src="images/realizacja1.png" alt="Realizacja remontowa KAM-BUD Lublin">
     </div>
 </section>
 
 <section id="contact">
-    <h2>Kontakt</h2>
-    <p>📞 Telefon: 512 120 499</p>
-    <p>📧 E-mail: <a href="mailto:kam-budkamil@poczta.onet.pl">kam-budkamil@poczta.onet.pl</a></p>
+    <h2>Kontakt – KAM-BUD Lublin</h2>
+    <p>📞 <strong>512 120 499</strong></p>
+    <p>📧 <a href="mailto:kam-budkamil@poczta.onet.pl">kam-budkamil@poczta.onet.pl</a></p>
 
-    <form action="https://formspree.io/f/mreennkb" method="POST">
-        <label>Imię i nazwisko:<br>
-            <input type="text" name="name" required>
-        </label><br><br>
-        <label>Email:<br>
-            <input type="email" name="_replyto" required>
-        </label><br><br>
-        <label>Wiadomość:<br>
-            <textarea name="message" rows="5" required></textarea>
-        </label><br><br>
-        <button type="submit" class="btn">Wyślij wiadomość</button>
-    </form>
+    <p>
+        Masz pytania lub planujesz remont? Skontaktuj się z nami – chętnie doradzimy.
+    </p>
 </section>
 
-<section id="map">
+<section>
     <h2>Lokalizacja – Lublin</h2>
     <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.874565449898!2d22.538368316032847!3d51.24645257962386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fc4d9fefc3eaf%3A0xf2bfcf6054509f26!2sLublin!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+        <iframe
+            src="https://www.google.com/maps?q=Lublin&output=embed"
+            width="100%" height="100%" style="border:0;" loading="lazy">
         </iframe>
     </div>
 </section>
 
 <footer>
-    © 2026 KAM-BUD
+    © 2026 KAM-BUD – Remonty i Wykończenia Wnętrz | Lublin
 </footer>
-
-<script>
-    // Prosta animacja sekcji przy scroll
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
-</script>
 
 </body>
 </html>
+
+
