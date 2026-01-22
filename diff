@@ -2,48 +2,118 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>KAM-BUD – Usługi Remontowo-Budowlane</title>
+    <title>KAM-BUD – Twoja Przestrzeń, Nasza Pasja</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        :root {
+            --primary-color: #ff7f00;
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: #1f2937;
+            --header-text: #fff;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            scroll-behavior: smooth;
         }
+
         header {
-            background: #1f2937;
-            color: white;
+            background-color: var(--header-bg);
+            color: var(--header-text);
             padding: 40px 20px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: var(--header-text);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
         section {
             padding: 40px 20px;
             max-width: 1000px;
             margin: 20px auto;
             background: white;
-            border-radius: 6px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
         }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         h2 {
-            color: #1f2937;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
         }
+
         ul {
-            padding-left: 20px;
+            padding-left: 0;
+            list-style: none;
         }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '🔨';
+            position: absolute;
+            left: 0;
+        }
+
         .btn {
             display: inline-block;
             margin-top: 15px;
             padding: 12px 25px;
-            background: #2563eb;
+            background: var(--primary-color);
             color: white;
             text-decoration: none;
             border-radius: 5px;
             border: none;
             cursor: pointer;
+            transition: background 0.3s;
         }
+
         .btn:hover {
-            background: #1d4ed8;
+            background: #e67300;
         }
+
         input, textarea {
             width: 100%;
             padding: 10px;
@@ -52,32 +122,57 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+
         label {
             font-weight: bold;
         }
+
         footer {
-            background: #1f2937;
-            color: white;
+            background: var(--header-bg);
+            color: var(--header-text);
             text-align: center;
             padding: 20px;
             margin-top: 40px;
         }
+
         /* GALERIA */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
         }
+
         .gallery img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 6px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, border 0.3s;
             cursor: pointer;
+            border: 2px solid transparent;
         }
+
         .gallery img:hover {
             transform: scale(1.05);
+            border: 2px solid var(--primary-color);
+        }
+
+        /* GOOGLE MAP */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        /* RESPONSYWNE */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            .gallery img {
+                height: 180px;
+            }
         }
     </style>
 </head>
@@ -86,9 +181,17 @@
 <header>
     <h1>KAM-BUD</h1>
     <p>Twoja Przestrzeń, Nasza Pasja</p>
+    <nav>
+        <a href="#about">O firmie</a>
+        <a href="#services">Zakres usług</a>
+        <a href="#why">Dlaczego KAM-BUD?</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#map">Lokalizacja</a>
+    </nav>
 </header>
 
-<section>
+<section id="about">
     <h2>O firmie</h2>
     <p>
         KAM-BUD to firma remontowo-budowlana oferująca kompleksowe
@@ -97,7 +200,7 @@
     </p>
 </section>
 
-<section>
+<section id="services">
     <h2>Zakres usług</h2>
     <ul>
         <li>Remonty mieszkań i domów</li>
@@ -108,7 +211,7 @@
     </ul>
 </section>
 
-<section>
+<section id="why">
     <h2>Dlaczego KAM-BUD?</h2>
     <ul>
         <li>Indywidualne podejście do klienta</li>
@@ -118,7 +221,7 @@
     </ul>
 </section>
 
-<section>
+<section id="gallery">
     <h2>Galeria realizacji</h2>
     <div class="gallery">
         <a href="images/logo1.jpg" target="_blank">
@@ -133,8 +236,7 @@
     </div>
 </section>
 
-
-<section>
+<section id="contact">
     <h2>Kontakt</h2>
     <p>📞 Telefon: 512 120 499</p>
     <p>📧 E-mail: <a href="mailto:kam-budkamil@poczta.onet.pl">kam-budkamil@poczta.onet.pl</a></p>
@@ -153,10 +255,38 @@
     </form>
 </section>
 
+<section id="map">
+    <h2>Lokalizacja – Lublin</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.874565449898!2d22.538368316032847!3d51.24645257962386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fc4d9fefc3eaf%3A0xf2bfcf6054509f26!2sLublin!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
 <footer>
     © 2026 KAM-BUD
 </footer>
 
+<script>
+    // Prosta animacja sekcji przy scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+</script>
+
 </body>
 </html>
-
