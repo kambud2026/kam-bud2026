@@ -81,3 +81,86 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nazwa Firmy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #1f2937;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2937;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nazwa Firmy</h1>
+    <p>Profesjonalne usługi dla Twojego biznesu</p>
+</header>
+
+<section>
+    <h2>O nas</h2>
+    <p>
+        Jesteśmy firmą oferującą wysokiej jakości usługi.
+        Działamy rzetelnie, terminowo i z pełnym zaangażowaniem.
+    </p>
+</section>
+
+<section>
+    <h2>Oferta</h2>
+    <ul>
+        <li>Usługa 1</li>
+        <li>Usługa 2</li>
+        <li>Usługa 3</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Kontakt</h2>
+    <p>Email: kontakt@twojafirma.pl</p>
+    <p>Telefon: 123 456 789</p>
+    <a class="btn" href="mailto:kontakt@twojafirma.pl">Napisz do nas</a>
+</section>
+
+<footer>
+    © 2026 Nazwa Firmy
+</footer>
+
+</body>
+</html>
