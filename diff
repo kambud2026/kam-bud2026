@@ -2,44 +2,48 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Nazwa Firmy</title>
+    <title>KAM-BUD – Usługi Remontowo-Budowlane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f5f5f5;
+            background: #f4f4f4;
             color: #333;
         }
         header {
             background: #1f2937;
             color: white;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
         }
         section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 20px auto;
             background: white;
-            margin-top: 20px;
+            border-radius: 6px;
         }
         h2 {
             color: #1f2937;
         }
+        ul {
+            padding-left: 20px;
+        }
         .btn {
             display: inline-block;
-            padding: 12px 20px;
+            margin-top: 15px;
+            padding: 12px 25px;
             background: #2563eb;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
         footer {
-            text-align: center;
-            padding: 20px;
             background: #1f2937;
             color: white;
+            text-align: center;
+            padding: 20px;
             margin-top: 40px;
         }
     </style>
@@ -47,119 +51,49 @@
 <body>
 
 <header>
-    <h1>Nazwa Firmy</h1>
-    <p>Profesjonalne usługi dla Twojego biznesu</p>
+    <h1>KAM-BUD</h1>
+    <p>Twoja Przestrzeń, Nasza Pasja</p>
 </header>
 
 <section>
-    <h2>O nas</h2>
+    <h2>O firmie</h2>
     <p>
-        Jesteśmy firmą oferującą wysokiej jakości usługi.
-        Działamy rzetelnie, terminowo i z pełnym zaangażowaniem.
+        KAM-BUD to firma remontowo-budowlana oferująca kompleksowe
+        usługi wykończeniowe i remontowe. Stawiamy na solidność,
+        terminowość i wysoką jakość wykonania.
     </p>
 </section>
 
 <section>
-    <h2>Oferta</h2>
+    <h2>Zakres usług</h2>
     <ul>
-        <li>Usługa 1</li>
-        <li>Usługa 2</li>
-        <li>Usługa 3</li>
+        <li>Remonty mieszkań i domów</li>
+        <li>Wykończenia wnętrz pod klucz</li>
+        <li>Gładzie, malowanie, tynki</li>
+        <li>Układanie paneli i płytek</li>
+        <li>Zabudowy g-k</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Dlaczego KAM-BUD?</h2>
+    <ul>
+        <li>Indywidualne podejście do klienta</li>
+        <li>Rzetelne wykonanie</li>
+        <li>Terminowość</li>
+        <li>Atrakcyjne ceny</li>
     </ul>
 </section>
 
 <section>
     <h2>Kontakt</h2>
-    <p>Email: kontakt@twojafirma.pl</p>
-    <p>Telefon: 123 456 789</p>
-    <a class="btn" href="mailto:kontakt@twojafirma.pl">Napisz do nas</a>
+    <p>📞 Telefon: 123 456 789</p>
+    <p>📧 E-mail: kambud@kontakt.pl</p>
+    <a class="btn" href="mailto:kambud@kontakt.pl">Napisz do nas</a>
 </section>
 
 <footer>
-    © 2026 Nazwa Firmy
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Nazwa Firmy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            margin-top: 20px;
-        }
-        h2 {
-            color: #1f2937;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1f2937;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Nazwa Firmy</h1>
-    <p>Profesjonalne usługi dla Twojego biznesu</p>
-</header>
-
-<section>
-    <h2>O nas</h2>
-    <p>
-        Jesteśmy firmą oferującą wysokiej jakości usługi.
-        Działamy rzetelnie, terminowo i z pełnym zaangażowaniem.
-    </p>
-</section>
-
-<section>
-    <h2>Oferta</h2>
-    <ul>
-        <li>Usługa 1</li>
-        <li>Usługa 2</li>
-        <li>Usługa 3</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Kontakt</h2>
-    <p>Email: kontakt@twojafirma.pl</p>
-    <p>Telefon: 123 456 789</p>
-    <a class="btn" href="mailto:kontakt@twojafirma.pl">Napisz do nas</a>
-</section>
-
-<footer>
-    © 2026 Nazwa Firmy
+    © 2026 KAM-BUD
 </footer>
 
 </body>
