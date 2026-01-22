@@ -38,6 +38,22 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
         }
         footer {
             background: #1f2937;
@@ -88,8 +104,20 @@
 <section>
     <h2>Kontakt</h2>
     <p>📞 Telefon: 512 120 499</p>
-    <p>📧 E-mail: kambudkamil@poczta.onet.pl</p>
-    <a class="btn" href="mailto:kambudkamil@poczta.onet.pl">Napisz do nas</a>
+    <p>📧 E-mail: <a href="mailto:kam-budkamil@poczta.onet.pl">kam-budkamil@poczta.onet.pl</a></p>
+
+    <form action="https://formspree.io/f/mreennkb" method="POST">
+        <label>Imię i nazwisko:<br>
+            <input type="text" name="name" required>
+        </label><br><br>
+        <label>Email:<br>
+            <input type="email" name="_replyto" required>
+        </label><br><br>
+        <label>Wiadomość:<br>
+            <textarea name="message" rows="5" required></textarea>
+        </label><br><br>
+        <button type="submit" class="btn">Wyślij wiadomość</button>
+    </form>
 </section>
 
 <footer>
